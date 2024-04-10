@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fruit Shop owned by R.S Ltd </title>
+    </head>
+    <body>
+      <p>Fruit code </p>
+      <p id="Result"> </p>
+      <p id="price"> </p>
+      <p id="Test"> </p>
+      <p id="est"></p>
+        <script>
+
+            function multi(x,y){
+                return (x*y);
+            }          
+             function multi2(x,y){
+                var t = x*y 
+                document.write("\n\nTotal Price :  ",document.getElementById("est").innerHTML=t);
+              }
+               // document.write("I am Rahul")
+            console.log(alert("The List of fruits are as follow:\n 1. Mangoes 50 $\n 2. Papyas 70 $\n 3. Watermelon 99 $"))
+            // console.log(alert(" 1. Mangoes 50 $\n 2. Papyas 70 $\n 3. Watermelon 99 $\n\n\n Select the alpha for buying fruit"))
+           
+            let a = prompt("Select your choice\n\n\n 1. Mangoes 50 $ \n 2. Papyas 70 $\n 3. Watermelon 99 $\n\n\n Select Corresponding No for buying fruit (for Ex. 1,2,3 )")
+            // console.log(a)
+            if (a<0) {alert("Fruits isn't Avail in this price range")}
+              else if(a<2 && a>0){ alert("Mangoes are 50 $");const b = 50 ;}
+              else if(a<3 && a>1){ alert("The Papays are 70 $"); let b = 70}
+              else if(a<4 && a>2){ alert("The Watermelons are 99 $");let b = 99}
+            //  else if(a  3 ){ alert("Good Choice ! Dragoan Fruit's are $350")}
+             else {alert("Inavalid value")}
+            
+             document.write(" Fruit list No  :  ",document.getElementById("Result").innerHTML=(a))
+             
+             
+
+             if (a<0){Null}
+                else if(a<2 && a>0){const b = 50;  console.log(b);
+                let  m = prompt("How many Items you want")
+                console.log(multi(b,m));
+                console.log(multi2(b,m));
+              document.write("\nMangoes Price :    ",
+              document.getElementById("price").innerHTML=(b));
+              document.write("\nMangoes Quantity :    ",
+              document.getElementById("Test").innerHTML=(m))
+              document.getElementById("est").innerHTML=t ; }
+                else if(a<3 && a>1){const b = 70;  console.log(b);
+                  let m = prompt("How many Items you want")
+                console.log(multi(b,m));
+                console.log(multi2(b,m));
+              document.write("\nPapays Price :    ", 
+              document.getElementById("price").innerHTML=(b));
+              document.write("\nPapays  Quantity :    ", 
+              document.getElementById("Test").innerHTML=(m))}
+                else if(a<4 && a>2){const b = 99;  console.log(b);
+                  let m = prompt("How many Items you want")
+                console.log(multi(b,m));
+                console.log(multi2(b,m));
+                document.write("\nWatermelon Price :    ",
+              document.getElementById("price").innerHTML=(b));
+              document.write("\nWaltermelon  Quantity :    ", 
+              document.getElementById("Test").innerHTML=(m))}
+             else {alert("Inavalid value")}
+              
+            // document.getElementById("Result").innerHTML=(b,m)
+
+
+             console.log(alert("Thank You !........  For Purchsing fruits form our Shop :)"))
+       </script>
+    </body>
+</html>
